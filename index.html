@@ -1,148 +1,166 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0d1117">
-    <title>我的作品集 | GitHub Pages</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DINO 的 GitHub 作品與亮點</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    .project {
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+    }
+    .project:last-child {
+      border-bottom: none;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project-description {
+      margin: 0.5rem 0;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#projects">作品集</a></li>
-                <li><a href="#about">關於我</a></li>
-                <li><a href="#contact">聯繫方式</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>DINO 的 GitHub 作品與亮點</h1>
+    <p>專注於 LLM、AI 與工安管理等前沿技術</p>
+  </header>
 
-    <section id="home">
-        <h1>歡迎來到我的作品集</h1>
-        <p>全端開發者 | 解決方案架構師</p>
-    </section>
+  <nav>
+    <a href="#about">關於我</a>
+    <a href="#projects">GitHub 專案</a>
+    <a href="#highlights">履歷亮點</a>
+    <a href="#contact">聯絡我</a>
+  </nav>
 
-    <section id="projects">
-        <h2>精選作品</h2>
-        <div class="project-grid">
-            <div class="project-item">
-                <h3>爬蟲數據一條龍專案</h3>
-                <div class="project-content">
-                    <div class="project-info">
-                        <p class="project-description">開發網路爬蟲系統，實現自動化數據收集、清理與分析，建立完整的數據處理流程。</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Selenium</span>
-                            <span>BeautifulSoup</span>
-                            <span>Pandas</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/dino0718/Crawler_Project_0214" target="_blank" class="btn">查看專案</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>AI 工安管理助理</h3>
-                <div class="project-content">
-                    <div class="project-info">
-                        <p class="project-description">基於深度學習的工安管理系統，結合電腦視覺技術，實現工安風險即時偵測與預警。</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>YOLO</span>
-                            <span>OpenCV</span>
-                            <span>TensorFlow</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/dino0718/ai_twins_Work_Safety" target="_blank" class="btn">查看專案</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>LLM 模型測試與優化</h3>
-                <div class="project-content">
-                    <div class="project-info">
-                        <p class="project-description">大型語言模型的測試與應用開發，包含模型評估、性能優化和實際應用場景驗證。</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>OpenAI API</span>
-                            <span>LangChain</span>
-                            <span>FastAPI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/dino0718/openai_akash_llm_test" target="_blank" class="btn">查看專案</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="view-more">
-            <a href="https://github.com/dino0718?tab=repositories" target="_blank" class="btn btn-large">查看更多作品</a>
-        </div>
-    </section>
-
+  <div class="container">
+    <!-- 關於我 -->
     <section id="about">
-        <h2>關於我</h2>
-        <div class="profile">
-            <div class="intro">
-                <p>擁有餐飲與房地產業務的跨領域背景，目前專注於<span class="highlight">AI 與數據科學領域</span>的發展。透過文化大學 AI 大數據班的專業訓練，我掌握了從<span class="highlight">數據分析到 AI 模型開發</span>的完整技術棧。</p>
-            </div>
-            
-            <div class="skills-section">
-                <h3>核心技能</h3>
-                <div class="skills-category">
-                    <h4>AI 與機器學習</h4>
-                    <ul class="skills-list">
-                        <li><span class="highlight">LLM 應用開發</span>：OpenAI API、LangChain、RAG 技術</li>
-                        <li><span class="highlight">電腦視覺</span>：YOLO、OpenCV、TensorFlow</li>
-                        <li><span class="highlight">NLP</span>：自然語言處理、文本分析</li>
-                    </ul>
-                </div>
-
-                <div class="skills-category">
-                    <h4>數據工程</h4>
-                    <ul class="skills-list">
-                        <li><span class="highlight">數據收集</span>：網路爬蟲、API 整合</li>
-                        <li><span class="highlight">數據處理</span>：Python、Pandas、資料清理與轉換</li>
-                        <li><span class="highlight">資料儲存</span>：SQL、NoSQL、向量資料庫</li>
-                    </ul>
-                </div>
-
-                <div class="skills-category">
-                    <h4>開發工具</h4>
-                    <ul class="skills-list">
-                        <li><span class="highlight">後端開發</span>：FastAPI、API 開發</li>
-                        <li><span class="highlight">監控分析</span>：Splunk、ELK Stack</li>
-                        <li><span class="highlight">版本控制</span>：Git、GitHub</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-section">
-                <h3>專業成長</h3>
-                <ul class="experience-list">
-                    <li>開發 AI 工安管理系統，整合<span class="highlight">電腦視覺</span>與<span class="highlight">LLM</span>技術</li>
-                    <li>建立智能客服系統，應用<span class="highlight">RAG</span>技術提升回覆質量</li>
-                    <li>實作資安監控儀表板，運用<span class="highlight">Splunk</span>進行日誌分析</li>
-                </ul>
-            </div>
-        </div>
+      <h2>關於我</h2>
+      <p>
+        我畢業於景文科技大學餐飲管理系，曾在餐飲與房地產領域累積豐富實戰經驗，
+        包括在有巢⽒房地產公司促成近7000萬土地交易，以及在餐廳服務中迅速適應多樣化工作流程。
+        隨著對新技術的熱情，我轉向 AI 與大數據領域，目前正參與中國文化大學的 AI 大數據人才養成計畫，
+        專注於 LLM、NLP 等前沿技術，同時透過多個專案累積實戰經驗。
+      </p>
     </section>
 
+    <!-- GitHub 專案 -->
+    <section id="projects">
+      <h2>GitHub 專案</h2>
+
+      <div class="project">
+        <h3>LLM 聊天機器人測試</h3>
+        <p class="project-description">
+          嘗試使用 OpenAI API 開發的簡單聊天機器人，能夠回答基本問題和進行對話。
+        </p>
+        <a href="https://github.com/dino0718/openai_akash_llm_test" target="_blank" class="btn">查看專案</a>
+      </div>
+
+      <div class="project">
+        <h3>AI 工安管理助理</h3>
+        <p class="project-description">
+          使用電腦視覺技術開發的工安管理系統，可以幫助識別工地上的危險情況。
+        </p>
+        <a href="https://github.com/dino0718/ai_twins_Work_Safety" target="_blank" class="btn">查看專案</a>
+      </div>
+    </section>
+
+    <!-- 履歷亮點 -->
+    <section id="highlights">
+      <h2>我的亮點</h2>
+      <ul>
+        <li>
+          <strong>房地產業務：</strong>在有巢⽒房地產公司促成近7000萬土地交易，展現數據驅動的談判與決策能力。
+        </li>
+        <li>
+          <strong>餐廳服務經驗：</strong>於信義區餐廳迅速掌握內外場作業流程，培養良好的團隊協作能力與服務精神。
+        </li>
+        <li>
+          <strong>專案領導：</strong>擔任數據一條龍與 ServeOn AI 客服系統等專案的組長，帶領團隊完成從數據收集到可視化的完整解決方案。
+        </li>
+        <li>
+          <strong>技術專長：</strong>精通 Python、Linux，熟悉 PyTorch、TensorFlow、LLM/NLP 技術，以及 Docker、FastAPI 等現代開發工具。
+        </li>
+      </ul>
+    </section>
+
+    <!-- 聯絡我 -->
     <section id="contact">
-        <h2>與我聯繫</h2>
-        <div class="social-links">
-            <a href="https://github.com/dino0718" target="_blank">GitHub</a>
-            <a href="mailto:dinoliuit@gmail.com" class="email-link">
-                <span class="email-icon">✉</span>
-                Email
-            </a>
-        </div>
+      <h2>聯絡我</h2>
+      <ul>
+        <li>Email: <a href="mailto:dinoliuit@gmail.com">dinoliuit@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/dino0718" target="_blank">https://github.com/dino0718</a></li>
+      </ul>
     </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 DINO. All rights reserved.</p>
+  </footer>
 </body>
 </html>
